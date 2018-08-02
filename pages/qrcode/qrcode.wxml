@@ -1,0 +1,10 @@
+<view class="container">
+  <input class="input"  placeholder="请输入" bindinput="input_rsa"/>
+  <view class="output" style='display:{{display1}}'>
+    {{output}}
+  </view>
+  <view class="output" style='display:{{display2}}'>
+    <image class='img' src='https://www.kuaizhan.com/common/encode-png?large=false&data={{imgURL}}' mode='aspectFit'></image>
+  </view>
+  <button class='share-btn'  bindtap="caozuo">操作</button>
+</view>

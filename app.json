@@ -1,14 +1,19 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/index/info",
-    "pages/logs/logs"
+    "pages/menu/menu",
+    "pages/qrcode/qrcode",
+    "pages/chat/chat",
+    "pages/logs/logs",
+    "pages/video/video",
+    "pages/talk/talk",
+    "pages/play/play"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#505050",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"#FFFFFF"
   },
   "tabBar": {
     "list": [

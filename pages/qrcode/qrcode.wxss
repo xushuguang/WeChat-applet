@@ -1,0 +1,25 @@
+.container{
+  width: 100%;
+  height: 1200rpx;
+}
+.input{
+  width:  75%;
+  background: #baf1fe;
+  height: 100rpx;
+  
+}
+.output{
+  margin-top: 30rpx;
+  width:  75%;
+  height: 400rpx;
+  font-size: 24rpx;
+  display:flex;
+  flex-direction: column; 
+  margin-bottom: 50rpx
+}
+.share-btn { 
+width:100%; 
+color:green; 
+position:fixed; 
+bottom:0; 
+} 

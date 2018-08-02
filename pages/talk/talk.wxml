@@ -1,0 +1,23 @@
+<view class='table'>
+  <block wx:for="{{chatRecord}}" wx:for-index="idx" wx:for-item="item">
+    <view class='tr' wx:if="{{item.property=='in'}}">
+        <view class='td1'>{{item.message}}</view>
+    </view>
+    <view class='tr' wx:if="{{item.property=='out'}}">
+      <view class='td2'>{{item.message}}</view>
+    </view>
+  </block>
+</view>
+<canvas canvas-id='canvasTo'></canvas>
+<view class="sendmessage">
+  <icon class="iconfont icon-yuyin" style='display:{{display1}}' catchtap="voiceTap"></icon>
+  <icon class="iconfont icon-liuyan" style='display:{{display2}}' catchtap="textTap"></icon>
+  <textarea bindinput="input_rsa" value='{{inputValue}}' style='display:{{display1}}' maxlength='140' auto-height='true' cursor-spacing='0'></textarea>
+  <button bindtouchstart="recordStart" bindtouchend="recordStop" style='display:{{display2}}'>按住 说话</button>
+  <block wx:if="{{inputValue==''}}">
+    <icon class="iconfont icon-jiahao" catchtap="more"></icon>
+  </block> 
+  <block wx:else>
+    <icon class="iconfont icon-xiangshang3" catchtap="sendmessage"></icon>
+  </block>
+</view>

@@ -1,17 +1,7 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view>
+  <view>
+    <text decode="{{true}}">使用须知:</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <view class="clickMeInfo">
-    <button bindtap='clickMe'>点击登录</button>
-    <view>{{code}}</view>
-  </view>
+  <text decode="{{true}}">&emsp;&emsp;在使用本程序前需要您进行微信授权登录，如果同意，请点击下方按钮进行授权。</text>
 </view>
+ <button class='passBtn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">授权登录</button>
